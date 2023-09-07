@@ -13,6 +13,11 @@
 		0DD666122AA72547009725B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD666102AA72547009725B8 /* Main.storyboard */; };
 		0DD666142AA7254C009725B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DD666132AA7254C009725B8 /* Assets.xcassets */; };
 		0DD666172AA7254C009725B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD666152AA7254C009725B8 /* LaunchScreen.storyboard */; };
+		0DD6661F2AA726C3009725B8 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6661E2AA726C3009725B8 /* Extension + UIView.swift */; };
+		0DD666452AA83A66009725B8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD666442AA83A66009725B8 /* TableViewCell.swift */; };
+		0DD6664D2AA8454C009725B8 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6664C2AA8454C009725B8 /* UserDefault.swift */; };
+		0DD6664F2AA84767009725B8 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD6664E2AA84767009725B8 /* Task.swift */; };
+		0DD666512AA8503C009725B8 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD666502AA8503C009725B8 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		0DD666132AA7254C009725B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DD666162AA7254C009725B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DD666182AA7254C009725B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD6661E2AA726C3009725B8 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
+		0DD666442AA83A66009725B8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0DD6664C2AA8454C009725B8 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		0DD6664E2AA84767009725B8 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		0DD666502AA8503C009725B8 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		0DD666092AA72547009725B8 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				0DD666462AA844A1009725B8 /* App */,
+				0DD666472AA844B5009725B8 /* Resources */,
+				0DD666482AA844EC009725B8 /* Model */,
+				0DD6660E2AA72547009725B8 /* ViewController.swift */,
+				0DD666442AA83A66009725B8 /* TableViewCell.swift */,
+				0DD666502AA8503C009725B8 /* DetailsViewController.swift */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		0DD666462AA844A1009725B8 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				0DD6660A2AA72547009725B8 /* AppDelegate.swift */,
 				0DD6660C2AA72547009725B8 /* SceneDelegate.swift */,
-				0DD6660E2AA72547009725B8 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0DD666472AA844B5009725B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				0DD666102AA72547009725B8 /* Main.storyboard */,
 				0DD666132AA7254C009725B8 /* Assets.xcassets */,
 				0DD666152AA7254C009725B8 /* LaunchScreen.storyboard */,
 				0DD666182AA7254C009725B8 /* Info.plist */,
 			);
-			path = ToDoList;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0DD666482AA844EC009725B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0DD6664A2AA84507009725B8 /* Service */,
+				0DD6664B2AA84517009725B8 /* Extensions */,
+				0DD6664E2AA84767009725B8 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DD6664A2AA84507009725B8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0DD6664C2AA8454C009725B8 /* UserDefault.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0DD6664B2AA84517009725B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0DD6661E2AA726C3009725B8 /* Extension + UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD666452AA83A66009725B8 /* TableViewCell.swift in Sources */,
+				0DD6661F2AA726C3009725B8 /* Extension + UIView.swift in Sources */,
+				0DD6664D2AA8454C009725B8 /* UserDefault.swift in Sources */,
+				0DD666512AA8503C009725B8 /* DetailsViewController.swift in Sources */,
 				0DD6660F2AA72547009725B8 /* ViewController.swift in Sources */,
 				0DD6660B2AA72547009725B8 /* AppDelegate.swift in Sources */,
+				0DD6664F2AA84767009725B8 /* Task.swift in Sources */,
 				0DD6660D2AA72547009725B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5N66TMU453;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +379,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5N66TMU453;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = ToDoList/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
